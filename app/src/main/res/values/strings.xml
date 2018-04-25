@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Udacity Practical Quiz</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="write_yourself">Write about yourself</string>
+    <string name="next">Next</string>
+
+    <string name="demoUsername">DemoUsername</string>
+    <string name="demoEmail">DemoEmail</string>
+    <string name="description">This is the demo description. The text will be replaced by original one.</string>
+</resources>

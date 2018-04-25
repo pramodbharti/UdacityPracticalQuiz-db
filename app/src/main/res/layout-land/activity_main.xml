@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_background"
+    tools:context="com.example.pramod.udacitypracticalquiz.MainActivity">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        card_view:cardBackgroundColor="#77FFFFFF"
+        card_view:cardCornerRadius="15dp"
+        card_view:contentPadding="15dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/pic"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/profile"
+                    app:civ_border_color="@color/gray"
+                    app:civ_border_width="3dp" />
+
+                <EditText
+                    android:id="@+id/et_username"
+                    style="@style/EditStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/pic"
+                    android:drawableLeft="@drawable/ic_person_add_black_24dp"
+                    android:hint="@string/username"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/et_email"
+                    style="@style/EditStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_username"
+                    android:layout_toRightOf="@+id/pic"
+                    android:drawableLeft="@drawable/ic_email_black_24dp"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/et_desc"
+                    style="@style/EditStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_email"
+                    android:layout_toRightOf="@+id/pic"
+                    android:drawableLeft="@drawable/ic_insert_comment_black_24dp"
+                    android:hint="@string/write_yourself"
+                    android:inputType="textMultiLine" />
+
+                <Button
+                    android:id="@+id/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/et_desc"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/button_style"
+                    android:text="@string/next"
+                    android:textColor="#FFF"
+                    android:textSize="20sp"
+                    android:onClick="next"/>
+            </RelativeLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
